@@ -1,0 +1,90 @@
+/*----------------------------------------------   
+--Typography: Body
+-----------------------------------------------  */
+body {
+  font-family: $font-paragraph;
+  color: #444;
+  position: relative;
+  line-height: $base-lineheight; 
+}
+
+/*----------------------------------------------   
+--Typography: Fluid body sizing hotness
+* Adjust to suit your needs.
+-----------------------------------------------  */
+body {
+font-size: 100%;
+  
+  @media (min-width: $mq-small) {
+    font-size: 110%
+  }
+  @media (min-width: $mq-med) {
+    font-size: 120%
+  }
+  @media (min-width: $mq-large) {
+    font-size: 130%
+  }
+  @media (min-width: $mq-xlarge) {
+    font-size: 150%
+  }
+  @media (min-width: $mq-xxlarge) {
+    font-size: 160%
+  }
+  @media (min-width: $mq-xxxlarge) {
+    font-size: 180%
+  }
+}
+
+/*----------------------------------------------   
+--Typography: Headers
+-----------------------------------------------  */
+h1,h2,h3,h4,h5{
+  font-family: $font-header;
+  font-weight: 700;
+  text-rendering:optimizeLegibility; 
+}
+
+h1 {
+  @include font-h1;
+}
+h2 {
+  @include font-h2;
+}
+h3 {
+  @include font-h3;
+}
+h4 {
+  @include font-h4;
+}
+
+/*----------------------------------------------   
+--Typography: paragraph and friends
+-----------------------------------------------  */
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.71428571em;
+  margin-bottom: 1.71428571em;
+  font-family: $font-paragraph;
+}
+
+/*----------------------------------------------   
+--lists
+-----------------------------------------------  */
+ul li{
+	list-style-position:	outside;
+	margin-left:	1em;
+	padding-left:	0.5em;
+	padding-bottom:	0.5em;
+}
+
+/*----------------------------------------------   
+--Links
+-----------------------------------------------  */
+a{
+	color:	$color-alpha;
+	transition: 0.7s ease;
+	
+	&:hover{
+		color:	darken($color-alpha, 20);
+		transition: 0.7s ease;
+	}	
+}

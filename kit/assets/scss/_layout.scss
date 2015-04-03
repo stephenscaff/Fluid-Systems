@@ -1,0 +1,93 @@
+/*----------------------------------------------   
+--Setup
+-----------------------------------------------  */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+html {
+	font-size: 100%; 
+	overflow-y: scroll; 
+	overflow-x: hidden;
+	width: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+
+/*----------------------------------------------   
+--Images
+-----------------------------------------------  */
+img,object,embed{
+  max-width:100%;
+  height:auto
+}
+
+img{
+  -ms-interpolation-mode:bicubic;
+  border: 0;
+}
+
+/*----------------------------------------------   
+--Row Class
+-----------------------------------------------  */
+.row{  
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (min-width: $mq-small) {
+    max-width:	85%;
+  }
+  	
+  @media (min-width: $mq-med) {
+   	max-width: 75%;
+ 	}
+ 	
+ 	@media (min-width: $mq-large) {
+   	max-width: 70%
+ 	}
+ 	
+ 	@media (min-width: $mq-xlarge) {
+   	max-width: 60%
+ 	}
+ 	@media (min-width: $mq-xxlarge) {
+ 	 	max-width: 50%
+ 	}
+ 	@media (min-width: $mq-xxxlarge) {
+ 	 	max-width: 45%
+ 	}
+}
+
+
+/*----------------------------------------------   
+--Grid for demo
+-----------------------------------------------  */
+main{
+	padding:	1em 0 2em;
+}
+
+/*----------------------------------------------   
+--Footer
+-----------------------------------------------  */
+footer{
+	
+	padding:	2em 0;
+	border-top:	1px solid #ddd;
+	//text-align:	center;
+	
+	img{
+		max-width:	4em;
+		margin:	0 1em 0 0;
+		display:	inline-block;
+		vertical-align:	middle;
+	}
+	
+	p{
+		display:	inline-block;
+		vertical-align:	middle;
+	}
+	
+}

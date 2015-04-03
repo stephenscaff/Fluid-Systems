@@ -1,0 +1,37 @@
+/*----------------------------------------------   
+--Typography
+Is this ovekill? Maybe. But, now you can apply 
+these globals to all typographic elements to keep 
+consistecy across your app.
+
+Also, while vert rhythym is awesome, fluid sizing
+can still have a great benefit even if you're less
+strict about typography. Just have to use Ems, Rems, 
+vw/vh, %, etc.
+-----------------------------------------------  */
+
+@mixin font-h1 {
+  font-size: 4.238095238em;
+  line-height: 1.213483146em;
+  margin-top: 0.80898876em;
+  margin-bottom: 0.40449438em;
+}
+@mixin font-h2 {
+  font-size: 2.619047619em;
+  line-height: 1.30909091em;
+  margin-top: 1.30909091em;
+  margin-bottom: 0.65454546em;
+}
+@mixin font-h3 {
+  font-size: 1.619047619em;
+  line-height: 1.058823529em;
+  margin-top: 1.05882353em;
+  margin-bottom: 1.05882353em;
+}
+@mixin font-h4 {
+  font-size: 1em;
+  line-height: 1.714285714em;
+  margin-top: 1.71428571em;
+  margin-bottom: 1.71428571em;
+}
+
